@@ -1,0 +1,342 @@
+/* Líneas de Colores - Opciones Creativas */
+/* Este archivo contiene diferentes estilos de líneas de colores que puedes activar según tu preferencia */
+
+/* OPCIÓN 1: Líneas Geométricas Animadas (Estilo Futurista) */
+.geometric-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.geometric-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, #00bcd4, #4dd0e1, #0097a7, #26c6da);
+    transform-origin: left center;
+    animation: geometricMove 8s linear infinite;
+}
+
+/* Líneas para la Opción 1 */
+.gl-1 { top: 10%; left: -100%; width: 100%; animation-delay: 0s; }
+.gl-2 { top: 30%; right: -100%; width: 100%; animation-delay: 2s; transform: rotate(90deg); }
+.gl-3 { top: 50%; left: -100%; width: 100%; animation-delay: 4s; transform: rotate(45deg); }
+.gl-4 { top: 70%; right: -100%; width: 100%; animation-delay: 6s; transform: rotate(-45deg); }
+.gl-5 { bottom: 10%; left: -100%; width: 100%; animation-delay: 1s; transform: rotate(135deg); }
+
+/* OPCIÓN 2: Líneas de Arcoíris Flotantes */
+.rainbow-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.rainbow-line {
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    animation: rainbowFloat 12s ease-in-out infinite;
+}
+
+/* Líneas para la Opción 2 */
+.rl-1 { top: 5%; left: 0; width: 20%; animation-delay: 0s; }
+.rl-2 { top: 15%; right: 0; width: 30%; animation-delay: 3s; }
+.rl-3 { top: 25%; left: 0; width: 25%; animation-delay: 6s; }
+.rl-4 { top: 35%; right: 0; width: 35%; animation-delay: 9s; }
+.rl-5 { top: 45%; left: 0; width: 40%; animation-delay: 1s; }
+.rl-6 { top: 55%; right: 0; width: 45%; animation-delay: 4s; }
+.rl-7 { top: 65%; left: 0; width: 35%; animation-delay: 7s; }
+.rl-8 { top: 75%; right: 0; width: 25%; animation-delay: 10s; }
+.rl-9 { top: 85%; left: 0; width: 30%; animation-delay: 2s; }
+.rl-10 { top: 95%; right: 0; width: 20%; animation-delay: 5s; }
+
+/* OPCIÓN 3: Líneas de Energía Cyan (Estilo Cyberpunk) */
+.energy-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.energy-line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00bcd4, transparent);
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #4dd0e1;
+    animation: energyFlow 4s linear infinite;
+}
+
+/* Líneas para la Opción 3 */
+.el-1 { top: 20%; left: 0; width: 100%; animation-delay: 0s; }
+.el-2 { top: 40%; right: 0; width: 100%; animation-delay: 1s; transform: rotate(180deg); }
+.el-3 { top: 60%; left: 0; width: 100%; animation-delay: 2s; }
+.el-4 { top: 80%; right: 0; width: 100%; animation-delay: 3s; transform: rotate(180deg); }
+
+/* OPCIÓN 4: Líneas de Píxeles Retro */
+.pixel-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0, 188, 212, 0.3) 10px,
+        rgba(0, 188, 212, 0.3) 20px
+    );
+}
+
+.pixel-line {
+    position: absolute;
+    height: 8px;
+    background: linear-gradient(90deg, #00bcd4, #4dd0e1);
+    animation: pixelMove 6s linear infinite;
+}
+
+/* Líneas para la Opción 4 */
+.pl-1 { top: 0; left: -100%; width: 50px; animation-delay: 0s; }
+.pl-2 { top: 20%; right: -100%; width: 80px; animation-delay: 2s; }
+.pl-3 { top: 40%; left: -100%; width: 60px; animation-delay: 4s; }
+.pl-4 { top: 60%; right: -100%; width: 100px; animation-delay: 1s; }
+.pl-5 { top: 80%; left: -100%; width: 70px; animation-delay: 3s; }
+
+/* OPCIÓN 5: Líneas de Sondeo (Radar) */
+.radar-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.radar-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 0;
+    background: linear-gradient(to bottom, #00bcd4, #4dd0e1);
+    transform-origin: center;
+    animation: radarScan 8s linear infinite;
+}
+
+/* Líneas para la Opción 5 */
+.rdl-1 { transform: rotate(0deg) translateY(-50%); animation-delay: 0s; }
+.rdl-2 { transform: rotate(30deg) translateY(-50%); animation-delay: 1s; }
+.rdl-3 { transform: rotate(60deg) translateY(-50%); animation-delay: 2s; }
+.rdl-4 { transform: rotate(90deg) translateY(-50%); animation-delay: 3s; }
+.rdl-5 { transform: rotate(120deg) translateY(-50%); animation-delay: 4s; }
+.rdl-6 { transform: rotate(150deg) translateY(-50%); animation-delay: 5s; }
+.rdl-7 { transform: rotate(180deg) translateY(-50%); animation-delay: 6s; }
+.rdl-8 { transform: rotate(210deg) translateY(-50%); animation-delay: 7s; }
+.rdl-9 { transform: rotate(240deg) translateY(-50%); animation-delay: 0.5s; }
+.rdl-10 { transform: rotate(270deg) translateY(-50%); animation-delay: 1.5s; }
+.rdl-11 { transform: rotate(300deg) translateY(-50%); animation-delay: 2.5s; }
+.rdl-12 { transform: rotate(330deg) translateY(-50%); animation-delay: 3.5s; }
+
+/* OPCIÓN 6: Líneas de Notas Musicales (Estilo Creativo) */
+.music-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.music-line {
+    position: absolute;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #00bcd4, #4dd0e1, #0097a7);
+    animation: musicWave 5s ease-in-out infinite;
+}
+
+/* Líneas para la Opción 6 */
+.ml-1 { top: 10%; left: 0; width: 30%; animation-delay: 0s; }
+.ml-2 { top: 25%; right: 0; width: 40%; animation-delay: 1s; }
+.ml-3 { top: 40%; left: 0; width: 35%; animation-delay: 2s; }
+.ml-4 { top: 55%; right: 0; width: 45%; animation-delay: 3s; }
+.ml-5 { top: 70%; left: 0; width: 50%; animation-delay: 4s; }
+.ml-6 { top: 85%; right: 0; width: 30%; animation-delay: 0.5s; }
+
+/* OPCIÓN 7: Líneas de Código (Matrix Style) */
+.matrix-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.matrix-line {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #00bcd4, #4dd0e1, transparent);
+    animation: matrixFall 8s linear infinite;
+}
+
+/* Líneas para la Opción 7 */
+.mat-1 { left: 10%; animation-delay: 0s; }
+.mat-2 { left: 20%; animation-delay: 1s; }
+.mat-3 { left: 30%; animation-delay: 2s; }
+.mat-4 { left: 40%; animation-delay: 3s; }
+.mat-5 { left: 50%; animation-delay: 4s; }
+.mat-6 { left: 60%; animation-delay: 5s; }
+.mat-7 { left: 70%; animation-delay: 6s; }
+.mat-8 { left: 80%; animation-delay: 7s; }
+.mat-9 { left: 90%; animation-delay: 0.5s; }
+
+/* OPCIÓN 8: Líneas de Estrellas (Cosmicas) */
+.star-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.star-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #00bcd4;
+    animation: starTwinkle 6s ease-in-out infinite;
+}
+
+/* Líneas para la Opción 8 */
+.sl-1 { top: 5%; left: 0; width: 25%; animation-delay: 0s; }
+.sl-2 { top: 15%; right: 0; width: 30%; animation-delay: 2s; }
+.sl-3 { top: 25%; left: 0; width: 20%; animation-delay: 4s; }
+.sl-4 { top: 35%; right: 0; width: 35%; animation-delay: 1s; }
+.sl-5 { top: 45%; left: 0; width: 40%; animation-delay: 3s; }
+.sl-6 { top: 55%; right: 0; width: 25%; animation-delay: 5s; }
+.sl-7 { top: 65%; left: 0; width: 30%; animation-delay: 0.5s; }
+.sl-8 { top: 75%; right: 0; width: 20%; animation-delay: 2.5s; }
+.sl-9 { top: 85%; left: 0; width: 35%; animation-delay: 4.5s; }
+.sl-10 { top: 95%; right: 0; width: 45%; animation-delay: 1.5s; }
+
+/* Animaciones Comunes */
+@keyframes geometricMove {
+    0% { transform: translateX(-100%) rotate(0deg); }
+    100% { transform: translateX(100%) rotate(360deg); }
+}
+
+@keyframes rainbowFloat {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+    50% { transform: translateY(-20px) translateX(20px); opacity: 0.8; }
+}
+
+@keyframes energyFlow {
+    0% { transform: translateX(-100%); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes pixelMove {
+    0% { transform: translateX(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes radarScan {
+    0% { height: 0; opacity: 0; }
+    50% { height: 50vh; opacity: 1; }
+    100% { height: 0; opacity: 0; }
+}
+
+@keyframes musicWave {
+    0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.3; }
+    50% { transform: translateY(-10px) scaleY(1.5); opacity: 0.8; }
+}
+
+@keyframes matrixFall {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes starTwinkle {
+    0%, 100% { transform: translateX(0) scale(1); opacity: 0.2; }
+    50% { transform: translateX(50px) scale(1.2); opacity: 1; }
+}
+
+/* Controles de Visibilidad - Activa solo una opción a la vez */
+/* Para activar una opción, elimina el comentario /* */ de esa sección */
+
+/* Activar Opción 1: Líneas Geométricas
+body { position: relative; }
+body::after { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="rgba(0,0,0,0.5)"/></svg>'); }
+*/
+
+/* Activar Opción 2: Líneas de Arcoíris
+body { position: relative; }
+*/
+
+/* Activar Opción 3: Líneas de Energía Cyan
+body { position: relative; }
+*/
+
+/* Activar Opción 4: Líneas de Píxeles Retro
+body { position: relative; }
+*/
+
+/* Activar Opción 5: Líneas de Radar
+body { position: relative; }
+*/
+
+/* Activar Opción 6: Líneas de Notas Musicales
+body { position: relative; }
+*/
+
+/* Activar Opción 7: Líneas de Matrix
+body { position: relative; }
+*/
+
+/* Activar Opción 8: Líneas de Estrellas
+body { position: relative; }
+*/
+
+/* Para usar estas líneas, simplemente agrega la clase correspondiente al body en tu HTML:
+<body class="geometric-lines">  <!-- Opción 1 -->
+<body class="rainbow-lines">     <!-- Opción 2 -->
+<body class="energy-lines">      <!-- Opción 3 -->
+<body class="pixel-lines">       <!-- Opción 4 -->
+<body class="radar-lines">       <!-- Opción 5 -->
+<body class="music-lines">       <!-- Opción 6 -->
+<body class="matrix-lines">      <!-- Opción 7 -->
+<body class="star-lines">        <!-- Opción 8 -->
+*/
